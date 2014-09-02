@@ -16,6 +16,7 @@
 		<jstl.version>1.2</jstl.version>
 		<validation.version>1.1.0.Final</validation.version>
 		<hibernate.validator.version>5.1.2.Final</hibernate.validator.version>
+		<beanutils.version>1.9.2</beanutils.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -113,6 +114,11 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator-annotation-processor</artifactId>
 			<version>${hibernate.validator.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>${beanutils.version}</version>
 		</dependency>
 	</dependencies>
 	<build>

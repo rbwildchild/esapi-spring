@@ -44,8 +44,8 @@ public class SecureContextInitializer {
 		}
 	}
 
-	private static void setSecureHandlerAdappter(ApplicationContext applicationContext)
-			throws InitializationException {
+	private static void setSecureHandlerAdappter(
+			ApplicationContext applicationContext) throws InitializationException {
 		Map<String, RequestMappingHandlerAdapter> handlerAdapters = applicationContext
 				.getBeansOfType(RequestMappingHandlerAdapter.class);
 		for (String name : handlerAdapters.keySet()) {
@@ -54,10 +54,11 @@ public class SecureContextInitializer {
 		}
 	}
 
-	private static void addSecureCustomResolver(RequestMappingHandlerAdapter handlerAdapter)
+	private static void addSecureCustomResolver(
+			RequestMappingHandlerAdapter handlerAdapter)
 			throws InitializationException {
-		SecureRequestBodyMethodArgumentResolver resolver = SecureRequestBodyMethodArgumentResolver
-				.getInstance(handlerAdapter);
+		SecureRequestBodyMethodArgumentResolver resolver = new SecureRequestBodyMethodArgumentResolver(
+				handlerAdapter);
 		List<HandlerMethodArgumentResolver> argumentResolvers = new ArrayList<>(
 				handlerAdapter.getArgumentResolvers());
 		List<HandlerMethodArgumentResolver> customResolvers = handlerAdapter

@@ -1,9 +1,8 @@
 package com.ge.efs.validation.validator;
 
-import org.hibernate.validator.HibernateValidator;
 import org.owasp.esapi.ESAPI;
 
-public class JSONBeanESAPIValidator extends HibernateValidator {
+public class JSONBeanESAPIValidator /*extends HibernateValidator*/ {
 	private static JSONBeanESAPIValidator instance;
 
 	private JSONBeanESAPIValidator() {}
