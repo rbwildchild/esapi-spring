@@ -5,7 +5,7 @@
 	<artifactId>esapi-spring</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>kevlar-web Maven Webapp</name>
+	<name>Esapi-Spring Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<encoding>UTF-8</encoding>
@@ -122,6 +122,6 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>kevlar-web</finalName>
+		<finalName>esapi-spring</finalName>
 	</build>
 </project>

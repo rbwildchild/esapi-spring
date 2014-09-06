@@ -22,7 +22,7 @@
 
 	<filter>
 		<filter-name>SecurityFilter</filter-name>
-		<filter-class>com.ge.efs.validation.filter.SecurityFilter</filter-class>
+		<filter-class>com.rfa.validation.filter.SecurityFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>SecurityFilter</filter-name>
@@ -36,7 +36,7 @@
 	</listener>
 
 	<servlet>
-		<servlet-name>KevlarWebDispatcher</servlet-name>
+		<servlet-name>EsapiSpringDispatcher</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
@@ -46,7 +46,7 @@
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>KevlarWebDispatcher</servlet-name>
+		<servlet-name>EsapiSpringDispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
