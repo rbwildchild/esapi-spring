@@ -1,6 +1,9 @@
 package com.rfa.example.model;
 
+import com.rfa.validation.constraint.EsapiValidator;
+
 public class User {
+	@EsapiValidator(type = "SafeString")
 	private String firstName;
 	private String lastName;
 	private String userName;
